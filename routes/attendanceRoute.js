@@ -85,7 +85,6 @@ router.post('/mark', authMiddleware, async (req, res) => {
 
 // ✅ Get attendance report
 router.get('/report', authMiddleware, async (req, res) => {
-    console.log('Generating attendance report with filters:', req.query)
   try {
     const { month, year, employeeId } = req.query
 
